@@ -1,5 +1,13 @@
 {
     "require": {
-        "bitcoin-php/bitcoin-ecdsa": "^1.1"
-    }
+        "bitcoin-php/bitcoin-ecdsa": "^1.1",
+        "block_io-php/block_io-php": "2.0.2",
+        "bitwasp/bitcoin": "dev-minimal"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/doersf/bitcoin-php.git"
+        }
+    ]
 }

@@ -2,6 +2,11 @@
 
 require_once('easybitcoin.php');
 require_once("BitcoinECDSA.php");
+//use \BlockIo\BlockIo;
+
+$apiKey = "e952-595d-5a8d-d0cb";
+$version = 2; // API version
+$pin = "e03a7a1d565a9decb6c3ade57141969086ef6f4f81ff5b53149aa1b814e010fc";
 use BitcoinPHP\BitcoinECDSA\BitcoinECDSA;
 $bitcoinECDSA = new BitcoinECDSA();
 
@@ -111,8 +116,12 @@ if (isset($_GET['hello'])) {
 
                 <?php ?>
 
-                <p>New Wallet Generation <span><?php echo $getadd; ?></span></p>
+                <p>New Wallet BTC <span><?php echo $getadd; ?></span></p>
                 <p>Priv Keys = <?php echo $privkey; ?> </p>
+
+                <h1>DOGETEST API</h1>
+
+                <p>New Wallet BTC <span><?php echo $getadd; ?></span></p>
 
                 <h3>Sign MEssague</h3>
                 <a href='index.php?hello=true'>Sign </a>
